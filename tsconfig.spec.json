@@ -1,14 +1,13 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/spec",
-    "types": [
-      "jasmine"
-    ]
+    "outDir": "../out-tsc/spec",
+    "module": "ES2022",
+    "target": "ES2022",
+    "baseUrl": "",
+    "types": ["jest", "node"],
+    "allowJs": true
   },
-  "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
-  ]
+  "files": ["polyfills.ts"],
+  "include": ["**/*.spec.ts", "**/*.d.ts"]
 }
